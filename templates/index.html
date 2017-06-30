@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>polly</title>
+  </head>
+  <body>
+    <textarea name="name" rows="8" cols="80" id="texto"></textarea>
+    <button type="button" onclick="vai()">Vai</button>
+  </body>
+
+  <script type="text/javascript">
+    function vai() {
+      texto = (document.getElementById('texto') || { }).value
+
+      if (!texto) {
+        texto = 'Tem que escrever alguma coisa no campo de texto, o seu retardado!'
+      }
+
+      window.location = '/vai/' + encodeURIComponent(texto)
+    }
+  </script>
+</html>

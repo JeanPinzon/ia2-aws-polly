@@ -1,0 +1,8 @@
+*.pyc
+.coverage
+coverage.xml
+pylint.out
+nosetests.xml
+.DS_Store
+**/__pycache__
+result.mp3
